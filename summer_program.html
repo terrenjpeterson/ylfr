@@ -46,8 +46,8 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Programs<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="after_school.html">After School Learning</a></li>
-                    <li><a href="summer_programs.html">Summer Programs</a></li>
+                    <li><a href="#">After School Learning</a></li>
+                    <li><a href="#">Summer Programs</a></li>
                     <li><a href="#">Financial Literacy</a></li>
                     <li class="divider"></li>
                     <li class="dropdown-header">More</li>
@@ -71,88 +71,25 @@
           <img src="https://s3-us-west-2.amazonaws.com/ylfr/ylfr_logo.jpg" width="300" height="150">
         </div>
         <div class="col-md-6">
-          <h3>General Inquiries</h3>
-          <p>Youth Life Foundation of Richmond</p>
-          <p>Send all mail to:</p>
-          <p>P.O. Box 15202</p>
+          <h3>Volunteer Opportunities</h3>
+          <p><a class="btn btn-primary btn-lg" href="get_involved.html" role="button">Learn more &raquo;</a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <h3>Learning Centers</h3>
-          <h4>A - Delmont Learning Center</h4>
-          <phone>804-228-1620</phone>
-          <address>3800 Delmont Street<br>
-                   Richmond, VA<br>
-          </address>
-
-          <h4>B - Highland Park Learning Center</h4>
-          <phone>804-321-3182</phone>
-          <address>3076 Meadowbridge Road<br>
-                   Richmond, VA<br>
-          </address>
-
-          <h4>C - LC Remix at Northminster Church</h4>
-          <phone>804-514-8504</phone>
-          <address>3121 Moss Side Avenue<br>
-                   Richmond, VA<br>
-          </address>
-
-      <div id="map_canvas" style="width:425px; height:350px"></div> 
-
-      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
-      <script type="text/javascript"> 
-
-        var map;
-        var markers = [];
-
-        initialize();
-
-        function initialize() {
-          var myOptions = {
-            zoom: 14,
-            center: new google.maps.LatLng(37.577, -77.429),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-          }
-          map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-          addMarker(new google.maps.LatLng(37.5835210, -77.42920300000003), "Delmont");
-          addMarker(new google.maps.LatLng(37.5716838, -77.41945140000001), "Highland Park");
-          addMarker(new google.maps.LatLng(37.5771880, -77.44013089999999), "LC Remix");
-
-        }
-
-        function addMarker(latlng, myTitle) {
-          markers.push(new google.maps.Marker({
-            position: latlng, 
-            map: map,
-            title: myTitle,
-            icon: "http://maps.google.com/mapfiles/marker" + String.fromCharCode(markers.length + 65) + ".png"
-          }));    
-        }
-       </script>
-
+          <h3>Summer Programs</h3>
+          <p>
+            <span>When the school year breaks, we offer structured summer activities Monday through Thursday from 9:00 AM – 3:00 PM.  Hands-on math, economics, </span>
+            <span>science, and social studies are also offered in the afternoons for children in second grade through high school.</span>
+          </p><br>
+          <p>
+            <span>Summer Interns work together with our Learning Center staff to provide innovative and engaging learning experiences for our students. Additionally, we </span>
+            <span>register and sponsor children to attend a summer camp designed for youth from urban communities. We also sponsor an incentive based mystery trip at the end </span>
+            <span>of the summer program. Students must maintain an average of 1.5(out of a possible 2) behavioral points for the year to qualify for this trip.</span>
+          </p><br>
         </div>
         <div class="col-md-6">
-          <h3>Key Contacts</h3>
-          <h4>Founder and Executive Director</h4>
-          <p>Heather Goodlett</p>
-          <p><a href="mailto:hgoodlett@ylfr.org">hgoodlett@ylfr.org</a><p>
-          <br>
-          <h4>Volunteer Coordinator</h4>
-          <p>mentor@ylfr.org</p>
-          <br>
-          <h4>Delmont Program Director</h4>
-          <p>Whitney Prusek<br>
-          <a href="mailto:wprusek@ylfr.org">wprusek@ylfr.org</a></p>
-          <br>
-          <h4>Highland Park Program Director</h4>
-          <p>Leahna Sullilvan</p>
-          <p>lsullivan@ylfr.org</p>
-          <br>
-          <h4>LC Remix Program Director</h4>
-          <p>Katharine Hunt</p>
-          <p>khunt@ylfr@org<p>
+          <img class="featurette-image img-responsive" src="https://s3-us-west-2.amazonaws.com/ylfr/group_facepaint.jpg" alt="Group Facepainting">
         </div>
       </div>
 

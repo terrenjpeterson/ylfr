@@ -11,6 +11,7 @@ var BETTER_FILE = "bootstrap.html";
 var DONATE_FILE = "donate.html";
 var CONTACT_FILE = "contact.html";
 var ABOUT_FILE = "about.html";
+var GET_INVOLVED_FILE = "get_involved.html";
 var AFTER_SCHOOL_FILE = "after_school.html";
 var SUMMER_PROGRAMS_FILE = "summer_program.html";
 var FINANCIAL_LITERACY_FILE = "financial_literacy.html";
@@ -28,6 +29,9 @@ var better_page = fs.readFileSync(BETTER_FILE, 'utf8');
 var donate_page = fs.readFileSync(DONATE_FILE, 'utf8');
 var contact_page = fs.readFileSync(CONTACT_FILE, 'utf8');
 var about_page = fs.readFileSync(ABOUT_FILE, 'utf8');
+var get_involved_page = fs.readFileSync(GET_INVOLVED_FILE, 'utf8');
+var after_school_page = fs.readFileSync(AFTER_SCHOOL_FILE, 'utf8');
+var summer_program_page = fs.readFileSync(SUMMER_PROGRAMS_FILE, 'utf8');
 
 // create the routes to handle http requests for individual html pages
 
@@ -57,6 +61,18 @@ app.get('/contact.html', function(req, res) {
 
 app.get('/about.html', function(req, res) {
     res.send(about_page);
+});
+
+app.get('/get_involved.html', function(req, res) {
+    res.send(get_involved_page);
+});
+
+app.get('/after_school.html', function(req, res) {
+    res.send(after_school_page);
+});
+
+app.get('/summer_program.html', function(req, res) {
+    res.send(summer_program_page);
 });
 
 // begin listening on the port for traffic
