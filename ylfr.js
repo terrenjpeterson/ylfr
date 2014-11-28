@@ -27,6 +27,7 @@ var home_page = fs.readFileSync(INPUT_FILE, 'utf8');
 var better_page = fs.readFileSync(BETTER_FILE, 'utf8');
 var donate_page = fs.readFileSync(DONATE_FILE, 'utf8');
 var contact_page = fs.readFileSync(CONTACT_FILE, 'utf8');
+var about_page = fs.readFileSync(ABOUT_FILE, 'utf8');
 
 // create the routes to handle http requests for individual html pages
 
@@ -52,6 +53,10 @@ app.get('/donate.html', function(req, res) {
 
 app.get('/contact.html', function(req, res) {
     res.send(contact_page);
+});
+
+app.get('/about.html', function(req, res) {
+    res.send(about_page);
 });
 
 // begin listening on the port for traffic
