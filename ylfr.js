@@ -15,6 +15,9 @@ var GET_INVOLVED_FILE = "get_involved.html";
 var AFTER_SCHOOL_FILE = "after_school.html";
 var SUMMER_PROGRAMS_FILE = "summer_program.html";
 var FINANCIAL_LITERACY_FILE = "financial_literacy.html";
+var DIRECTORS_MESSAGE_FILE = "directors_message.html";
+var CHILD_SPOTLIGHT_FILE = "child_spotlight.html";
+var SUCCESS_FILE = "success.html";
 
 // create the server
 
@@ -32,6 +35,9 @@ var about_page = fs.readFileSync(ABOUT_FILE, 'utf8');
 var get_involved_page = fs.readFileSync(GET_INVOLVED_FILE, 'utf8');
 var after_school_page = fs.readFileSync(AFTER_SCHOOL_FILE, 'utf8');
 var summer_program_page = fs.readFileSync(SUMMER_PROGRAMS_FILE, 'utf8');
+var directors_message_page = fs.readFileSync(DIRECTORS_MESSAGE_FILE, 'utf8');
+var child_spotlight_page = fs.readFileSync(CHILD_SPOTLIGHT_FILE, 'utf8');
+var success_page = fs.readFileSync(SUCCESS_FILE, 'utf8');
 
 // create the routes to handle http requests for individual html pages
 
@@ -73,6 +79,18 @@ app.get('/after_school.html', function(req, res) {
 
 app.get('/summer_program.html', function(req, res) {
     res.send(summer_program_page);
+});
+
+app.get('/directors_message.html', function(req, res) {
+    res.send(directors_message_page);
+});
+
+app.get('/child_spotlight.html', function(req, res) {
+    res.send(child_spotlight_page);
+});
+
+app.get('/success.html', function(req, res) {
+    res.send(success_page);
 });
 
 // begin listening on the port for traffic
